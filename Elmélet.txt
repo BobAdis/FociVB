@@ -1,0 +1,40 @@
+Gyakorlat: Kollekcióval oldottam meg a 'models' mappában, de az öröklődés is meg van oldva a 'models2' mappában
+
+Elmélet:
+1. feladat
+
+Exception - minden kivétel ősosztálya
+RuntimeException (RE) - nem ellenőrzött kivételek ősosztálya
+
+A futásidőben nem megoldható problémák esetén használjuk a RE-t.
+
+2. feladat
+
+Iteratoral lehet bejárni és a remove segédmetódus segítségével lehet törölni.
+
+while (iterator.hasNext()) {
+    RaceResult result = iterator.next();
+    if (result.getPercentage() != 100) {
+        iterator.remove();
+    }
+}
+
+3. feladat
+
+● absztrakció (abstraction) : egyszerű dolgok összetettebb működést reprezentálnak
+● enkapszuláció (encapsulation) : csak az fér hozzá egy adott dologhoz, aki (ami) azt birtokolja
+● öröklődés (inheritance) : egy osztály egy másiktól örököl
+● többalakúság (polymorphism) : egy metódus ugyanazon a néven más osztályban mást csinál
+
+● coupling (csatolás) : osztályok mennyit látnak egymásból (láthatósági jelzők)
+● cohesion (kohézió) : egy egység (pl. package) egyetlen jól meghatározott feladatot lát el
+● association (asszociáció) : az objektumok közötti kapcsolatot határozza meg (egy objektum milyen viszonyban van egy másikkal)
+● aggregation (aggregáció) : az association megvalósítása, amelyben az objektum állapotához tartozik egy másik objektum, amely önállóan is létező
+● composition (kompozíció) : az association másik megvalósítása, amelyben az objektum állapotához tartozik egy másik objektum, és a tartalmazó objektum nem létezik a “szülő” nélkül
+
+4. feladat
+
+LocalDate
+
+'.' kicserélni '-' -re
+
